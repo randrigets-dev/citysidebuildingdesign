@@ -2,177 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fafafa" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <title>SSMUH & Multi-Unit Housing | Cityside Building Design</title>
   <meta name="description" content="Cityside Building Design helps builders and property owners navigate Small-Scale Multi-Unit Housing (SSMUH) and multiplex bylaws in North Vancouver, West Vancouver, and Metro Vancouver. We provide permit-ready drawings and guidance on unit yield, height, FAR, setbacks, site coverage, parking, and servicing early in the design process." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #222;
-      line-height: 1.6;
-      background: #ffffff;
-    }
-
-    nav {
-      padding: 14px 28px;
-      border-bottom: 1px solid #ddd;
-      background: #fafafa;
-    }
-
-    nav a {
-      margin-right: 18px;
-      text-decoration: none;
-      color: #222;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      padding: 3.5rem 2rem;
-      background: #f5f5f5;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.3rem;
-      font-weight: 600;
-    }
-
-    header p {
-      max-width: 900px;
-      margin: 0.75rem 0 0 0;
-      color: #555;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.7rem;
-      margin: 0 0 0.75rem 0;
-    }
-
-    .block {
-      margin-bottom: 2.5rem;
-    }
-
-    .callout {
-      padding: 1.25rem;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      background: #fafafa;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li { margin-bottom: 0.4rem; }
-
-    a {
-      color: #000;
-      text-decoration: underline;
-    }
-
-    .nav {
-      font-size: 0.95rem;
-      margin-top: 1rem;
-    }
-
-    footer {
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #ddd;
-      background: #f9f9f9;
-    }
-  </style>
-</head>
-
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="ssmuh.html">SSMUH / Multi-Unit Housing</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav>
+    <span class="nav-brand">Cityside</span>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="ssmuh.html" class="active">SSMUH / Multi-Unit Housing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-<header>
-  <h1>SSMUH & Multi-Unit Housing</h1>
-  <p>
-    Cityside Building Design supports builders and property owners with practical,
-    permit-ready design for duplexes, triplexes, fourplexes, and six-unit
-    small-scale multi-unit housing (SSMUH) projects across the North Shore and
-    Metro Vancouver.
-  </p>
-</header>
-
-<section>
-
-  <div class="block">
-    <h2>What is SSMUH?</h2>
+  <header>
+    <h1>SSMUH & Multi-Unit Housing</h1>
     <p>
-      Small-Scale Multi-Unit Housing (SSMUH) generally refers to “missing middle”
-      housing forms — multiple units on a single residential lot — enabled through
-      municipal zoning updates. These projects typically focus on efficient unit
-      layouts, code compliance, and clear zoning alignment.
+      Cityside Building Design supports builders and property owners with practical,
+      permit-ready design for duplexes, triplexes, fourplexes, and six-unit
+      small-scale multi-unit housing (SSMUH) projects across the North Shore and
+      Metro Vancouver.
     </p>
-    <div class="callout">
-      <strong>Typical SSMUH forms:</strong>
+  </header>
+
+  <section>
+
+    <div class="block">
+      <h2>What is SSMUH?</h2>
+      <p>
+        Small-Scale Multi-Unit Housing (SSMUH) generally refers to "missing middle"
+        housing forms — multiple units on a single residential lot — enabled through
+        municipal zoning updates. These projects typically focus on efficient unit
+        layouts, code compliance, and clear zoning alignment.
+      </p>
+      <div class="callout">
+        <strong>Typical SSMUH forms:</strong>
+        <ul>
+          <li>Duplex (including suites)</li>
+          <li>Triplex</li>
+          <li>Fourplex</li>
+          <li>Small apartment / six-unit configurations (where permitted)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>How Cityside Helps</h2>
+      <p>
+        The success of SSMUH projects is rarely "just drawing units." The work is in
+        fitting the project into the bylaw envelope, while keeping it buildable, code-aware,
+        and workable for parking, access, garbage/recycling, and servicing.
+      </p>
       <ul>
-        <li>Duplex (including suites)</li>
-        <li>Triplex</li>
-        <li>Fourplex</li>
-        <li>Small apartment / six-unit configurations (where permitted)</li>
+        <li><strong>Feasibility:</strong> quick checks on unit count, massing, setbacks, and constraints</li>
+        <li><strong>Bylaw alignment:</strong> height, site coverage, density/FAR, and zoning interpretation</li>
+        <li><strong>Code-aware planning:</strong> practical layouts that reduce surprises later</li>
+        <li><strong>Permit drawings:</strong> coordinated packages suitable for municipal review</li>
+        <li><strong>Builder-friendly details:</strong> clear documentation and constructability focus</li>
       </ul>
     </div>
-  </div>
 
-  <div class="block">
-    <h2>How Cityside Helps</h2>
-    <p>
-      The success of SSMUH projects is rarely “just drawing units.” The work is in
-      fitting the project into the bylaw envelope, while keeping it buildable, code-aware,
-      and workable for parking, access, garbage/recycling, and servicing.
-    </p>
-    <ul>
-      <li><strong>Feasibility:</strong> quick checks on unit count, massing, setbacks, and constraints</li>
-      <li><strong>Bylaw alignment:</strong> height, site coverage, density/FAR, and zoning interpretation</li>
-      <li><strong>Code-aware planning:</strong> practical layouts that reduce surprises later</li>
-      <li><strong>Permit drawings:</strong> coordinated packages suitable for municipal review</li>
-      <li><strong>Builder-friendly details:</strong> clear documentation and constructability focus</li>
-    </ul>
-  </div>
+    <div class="block">
+      <h2>Common Challenges (and how we avoid them)</h2>
+      <ul>
+        <li><strong>Height and grade:</strong> measurements can hinge on how existing grade is interpreted</li>
+        <li><strong>Site coverage:</strong> decks, stairs, projections, accessory structures, and roof overhang rules vary</li>
+        <li><strong>Parking + access:</strong> stall layout, maneuvering, and lane access must work in real life</li>
+        <li><strong>Servicing:</strong> waste/recycling staging and utility routing often decide the plan</li>
+        <li><strong>Sloped sites:</strong> entries, retaining, and step-downs must stay inside envelope limits</li>
+      </ul>
+    </div>
 
-  <div class="block">
-    <h2>Common Challenges (and how we avoid them)</h2>
-    <ul>
-      <li><strong>Height and grade:</strong> measurements can hinge on how existing grade is interpreted</li>
-      <li><strong>Site coverage:</strong> decks, stairs, projections, accessory structures, and roof overhang rules vary</li>
-      <li><strong>Parking + access:</strong> stall layout, maneuvering, and lane access must work in real life</li>
-      <li><strong>Servicing:</strong> waste/recycling staging and utility routing often decide the plan</li>
-      <li><strong>Sloped sites:</strong> entries, retaining, and step-downs must stay inside envelope limits</li>
-    </ul>
-  </div>
+    <div class="block">
+      <h2>Where We Work</h2>
+      <p>
+        We regularly support SSMUH and multi-unit design in:
+      </p>
+      <ul>
+        <li><strong>North Vancouver</strong> — including updated small-scale multi-unit zoning</li>
+        <li><strong>West Vancouver</strong> — navigating unique topography and heritage considerations</li>
+        <li><strong>Port Moody</strong> — transit-oriented density and hillside constraints</li>
+        <li><strong>Greater Metro Vancouver</strong> — adapting to evolving municipal bylaws</li>
+      </ul>
+      <p>
+        Each municipality interprets SSMUH differently. We stay current on bylaw changes
+        and work directly with planning departments to reduce back-and-forth during review.
+      </p>
+    </div>
 
-  <div class="block">
-    <h2>Where We Work</h2>
-    <p>
-      We regularly support SSMUH and multi-unit design in:
-    </p>
-    <ul>
-      <li><strong>North Vancouver</strong> (including updated small-scale multi-unit zoning)</li>
-      <li><strong>West Vancouver</strong></li>
-      <li><strong>Port Moody</stro
+    <div class="block">
+      <h2>Ready to Explore a Project?</h2>
+      <p>
+        Whether you're evaluating a lot, comparing unit yields, or ready to start drawings,
+        we can help at any stage.
+      </p>
+      <a href="contact.html" class="cta">Get in Touch</a>
+    </div>
+
+  </section>
+
+  <footer>
+    © <span id="year"></span> Cityside Building Design — SSMUH & Multi-Unit Housing
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    toggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,567 @@
+/* Cityside Building Design - Shared Styles */
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Navigation */
+nav {
+  padding: 14px 28px;
+  border-bottom: 1px solid #ddd;
+  background: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 8px 4px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #000;
+  border-bottom: 2px solid #222;
+}
+
+/* Mobile Nav Toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+}
+
+/* Header */
+header {
+  padding: 3.5rem 2rem;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+header.hero {
+  padding: 4rem 2rem;
+}
+
+/* Hero with Image */
+.feature-image {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.feature-image img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-image a:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+}
+
+.lightbox-trigger {
+  cursor: pointer;
+}
+
+/* Contact Layout */
+.contact-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.contact-layout .card {
+  flex: 1;
+}
+
+.contact-layout .contact-image {
+  flex: 0 0 250px;
+}
+
+.contact-layout .contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Embed */
+.video-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+header.hero h1 {
+  font-size: 2.6rem;
+}
+
+header p {
+  max-width: 900px;
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0.75rem 0 0 0;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Cards & Callouts */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  background: #fff;
+}
+
+.card-image-right {
+  float: right;
+  width: 250px;
+  height: auto;
+  margin: 0 1rem 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.callout {
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  margin-top: 1rem;
+}
+
+.block {
+  margin-bottom: 2.5rem;
+}
+
+.service {
+  margin-bottom: 2.5rem;
+}
+
+/* Contact Page Specific */
+.label {
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.label:first-child {
+  margin-top: 0;
+}
+
+.muted {
+  color: #555;
+}
+
+.muted a {
+  color: #000;
+  word-break: break-word;
+}
+
+.note {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: #666;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+/* CTA Button */
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 14px 28px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  min-height: 44px;
+  text-align: center;
+}
+
+.cta:hover {
+  background: #444;
+  text-decoration: none;
+}
+
+.cta:active {
+  background: #000;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+}
+
+/* Tablet - 768px and below */
+@media (max-width: 768px) {
+  header {
+    padding: 3rem 1.5rem;
+  }
+
+  header.hero {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .feature-image {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header.hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* Mobile - 600px and below */
+@media (max-width: 600px) {
+  nav {
+    padding: 12px 16px;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    margin-top: 12px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a.active {
+    border-bottom: 1px solid #eee;
+    border-left: 3px solid #222;
+    padding-left: 12px;
+  }
+
+  .nav-brand {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  header {
+    padding: 2.5rem 1.25rem;
+  }
+
+  header.hero {
+    padding: 3rem 1.25rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header.hero h1 {
+    font-size: 1.9rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .card-image-right {
+    float: none;
+    display: block;
+    width: 120px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .callout {
+    padding: 1rem;
+  }
+
+  .cta {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+  }
+
+  footer {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Touch-friendly list items */
+  li {
+    margin-bottom: 0.75rem;
+    padding: 4px 0;
+  }
+
+  /* Contact layout stacks on mobile */
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  .contact-layout .contact-image {
+    flex: none;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile - 400px and below */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header.hero h1 {
+    font-size: 1.65rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Landscape Phone */
+@media (max-height: 500px) and (orientation: landscape) {
+  header {
+    padding: 2rem 1.5rem;
+  }
+
+  header.hero {
+    padding: 2rem 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+/* High DPI / Retina adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  nav, .cta, .nav-toggle {
+    display: none !important;
+  }
+
+  header, section, footer {
+    padding: 1rem 0;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .card, .callout {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+}
