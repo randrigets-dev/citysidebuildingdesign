@@ -565,3 +565,16 @@ footer {
     break-inside: avoid;
   }
 }
+.profile {
+  text-align: center;
+}
+
+.profile-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.profile-title {
+  color: #666;
+  font-size: 0.9rem;
+}
