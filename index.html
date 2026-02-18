@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Permit-ready residential and multi-unit building design for builders and property owners across Metro Vancouver." />
   <meta name="twitter:image" content="https://citysidebuildingdesign.ca/Images/get_in_touch.jpg" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=11" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -92,13 +92,26 @@
   </section>
 
   <section>
-    <h2>Designs That Navigate Zoning and Permits</h2>
-    <p>
-      Cityside Building Design specializes in permit-ready drawings for
-      residential and small-scale multi-unit housing projects. We work closely
-      with builders and property owners to ensure zoning compliance,
-      constructability, and efficient approvals.
-    </p>
+    <div class="two-col">
+      <div class="two-col-text">
+        <h2>Designs That Navigate Zoning and Permits</h2>
+        <p>
+          Cityside Building Design specializes in permit-ready drawings for
+          residential and small-scale multi-unit housing projects. We work closely
+          with builders and property owners to ensure zoning compliance,
+          constructability, and efficient approvals.
+        </p>
+        <p style="margin-top: 1rem;">
+          With <strong>30+ years of architecture experience</strong> and <strong>300+ completed projects</strong>, 
+          founder Rand Rigets brings deep knowledge of municipal bylaws, BC Building Code, 
+          and practical construction to every project.
+        </p>
+        <a href="services.html" class="cta-inline" style="margin-top: 1rem; display: inline-block;">View Our Services →</a>
+      </div>
+      <div class="two-col-img">
+        <img src="Images/design-process.png" alt="Building design process - from blueprints to completed project" loading="lazy" />
+      </div>
+    </div>
   </section>
 
   <section class="alt-bg">
@@ -143,8 +156,9 @@
     </div>
   </section>
 
-  <section>
+  <section class="video-section">
     <h2>Meet Cityside</h2>
+    <p class="muted" style="max-width: 600px; margin: 0 auto 2rem;">See how we approach residential and multi-unit design on the North Shore.</p>
     <div class="video-container">
       <iframe 
         src="https://www.youtube.com/embed/-dESBXwVDI0" 
@@ -157,12 +171,30 @@
   </section>
 
   <section class="alt-bg">
-    <h2>Service Area</h2>
-    <p>
-      Based on the North Shore, serving North Vancouver, West Vancouver,
-      Port Moody, Coquitlam, and Metro Vancouver.
-    </p>
-    <p style="margin-top: 1rem;"><a href="services.html" class="cta-inline" aria-label="View all services">View All Services →</a></p>
+    <h2 style="text-align: center;">Trusted by Builders and Owners</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Rand's knowledge of North Vancouver zoning saved us months of back-and-forth with the city. The drawings were permit-ready on the first submission."</p>
+        <div class="testimonial-author">— Local Builder, North Vancouver</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"We came to Cityside with a lot and a rough idea. They handled the feasibility, zoning analysis, and produced construction-ready drawings. Professional from start to finish."</p>
+        <div class="testimonial-author">— Property Developer, West Vancouver</div>
+      </div>
+    </div>
+    <p class="muted" style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">Want to share your experience? <a href="contact.html">Get in touch</a></p>
+  </section>
+
+  <section>
+    <h2 style="text-align: center;">Service Area</h2>
+    <div class="area-badges">
+      <span class="area-badge">North Vancouver</span>
+      <span class="area-badge">West Vancouver</span>
+      <span class="area-badge">Port Moody</span>
+      <span class="area-badge">Coquitlam</span>
+      <span class="area-badge">Metro Vancouver</span>
+    </div>
+    <p style="text-align: center; margin-top: 1.5rem;"><a href="services.html" class="cta-inline" aria-label="View all services">View All Services →</a></p>
   </section>
 
   <section class="cta-banner">
@@ -171,8 +203,37 @@
     <a href="contact.html" class="cta cta-hero" style="border: none;" aria-label="Start a conversation about your project">Get in Touch</a>
   </section>
 
-  <footer>
-    © <span id="year"></span> Cityside Building Design — Residential & Multi-Unit Design
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Cityside Building Design</h4>
+        <p>Permit-ready residential and multi-unit building design across Metro Vancouver.</p>
+        <p style="margin-top: 0.75rem;"><strong>Rand Rigets</strong><br/>Architectural Technologist, AIBC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="ssmuh.html">SSMUH / Multi-Unit</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <a href="ssmuh.html">North Vancouver</a>
+        <a href="ssmuh.html">West Vancouver</a>
+        <a href="ssmuh.html">Port Moody</a>
+        <a href="ssmuh.html">Coquitlam</a>
+        <a href="ssmuh.html">Metro Vancouver</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+17789603671">(778) 960-3671</a>
+        <a href="mailto:rand@citysidebuildingdesign.ca">rand@citysidebuildingdesign.ca</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Cityside Building Design. All rights reserved.
+    </div>
   </footer>
 
   <script>
@@ -186,6 +247,20 @@
       toggle.setAttribute('aria-expanded', isOpen);
       toggle.textContent = isOpen ? '✕' : '☰';
     });
+
+    // Scroll fade-in animations
+    const fadeEls = document.querySelectorAll('.service-card, .testimonial-card, .two-col-img, .area-badge');
+    fadeEls.forEach(el => el.classList.add('fade-in'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    fadeEls.forEach(el => observer.observe(el));
   </script>
 
 </body>
