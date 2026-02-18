@@ -206,6 +206,14 @@ header p {
   margin-bottom: 0.75rem;
 }
 
+.service-icon-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+}
+
 .service-card h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
@@ -870,6 +878,16 @@ footer {
   background: var(--bg-alt);
   border-radius: 50%;
   border: 2px solid var(--border);
+}
+
+.accent-icon-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--bg-alt);
+  flex-shrink: 0;
 }
 
 .cta-inline {
