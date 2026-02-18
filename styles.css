@@ -133,8 +133,9 @@ header h1 {
 }
 
 header.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 0.12em;
+  font-size: 3.5rem;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 header p {
@@ -142,6 +143,10 @@ header p {
   font-size: 1.15rem;
   color: var(--text-muted);
   margin: 0.75rem auto 0 auto;
+}
+
+header.hero p {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Stats Bar */
