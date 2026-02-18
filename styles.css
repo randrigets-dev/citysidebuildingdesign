@@ -210,10 +210,10 @@ header p {
 }
 
 .service-icon-img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   border-radius: 12px;
 }
 
