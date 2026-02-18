@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Residential and multi-unit building design services — zoning compliance, permit-ready drawings, and feasibility." />
   <meta name="twitter:image" content="https://citysidebuildingdesign.ca/Images/Info.jpg" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=14" />
+  <link rel="stylesheet" href="styles.css?v=15" />
 </head>
 <body>
 
@@ -138,6 +138,27 @@
     <img src="" alt="" id="lightbox-img" />
   </div>
 
+  <section class="alt-bg">
+    <h2 style="text-align: center;">Why Cityside</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-number">48</div>
+        <div class="why-label">Years Combined Experience</div>
+        <p>Nearly 30 years in naval architecture plus 18 years in civil — precision engineering meets practical building design.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-number">200+</div>
+        <div class="why-label">Completed Projects</div>
+        <p>Residential and multi-unit projects across North Vancouver, West Vancouver, Port Moody, Coquitlam, and Metro Vancouver.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-number">5</div>
+        <div class="why-label">Municipalities Served</div>
+        <p>We stay current with evolving bylaws and zoning changes across every municipality we serve, reducing revision cycles and costly delays.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-banner">
     <h2>Ready to Start?</h2>
     <p>Whether you're evaluating a lot or ready for permit drawings, we can help at any stage.</p>
@@ -189,7 +210,7 @@
     });
 
     // Scroll fade-in animations
-    const fadeEls = document.querySelectorAll('.accent-icon-img, .service-card');
+    const fadeEls = document.querySelectorAll('.accent-icon-img, .service-card, .why-card');
     fadeEls.forEach(el => el.classList.add('fade-in'));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
