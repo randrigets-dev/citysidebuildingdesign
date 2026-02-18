@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a5276" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Contact | Cityside Building Design</title>
+  <meta name="description" content="Contact Cityside Building Design for residential and multi-unit design services in North Vancouver, West Vancouver, Port Moody, and Metro Vancouver." />
+  <meta property="og:title" content="Contact | Cityside Building Design" />
+  <meta property="og:description" content="Reach out to discuss a project, request a quote, or ask a zoning question." />
+  <meta property="og:image" content="https://citysidebuildingdesign.ca/Images/rand.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://citysidebuildingdesign.ca/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | Cityside Building Design" />
+  <meta name="twitter:description" content="Reach out to discuss a project, request a quote, or ask a zoning question." />
+  <meta name="twitter:image" content="https://citysidebuildingdesign.ca/Images/rand.jpg" />
+  <link rel="canonical" href="https://citysidebuildingdesign.ca/contact.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Cityside Building Design",
+    "url": "https://citysidebuildingdesign.ca/contact.html",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "Cityside Building Design",
+      "telephone": "+17789603671",
+      "email": "rand@citysidebuildingdesign.ca"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <span class="nav-brand">Cityside</span>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="ssmuh.html">SSMUH / Multi-Unit Housing</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero-sm">
+    <h1>Contact</h1>
+    <p>Reach out to discuss a project, request a quote, or ask a zoning / feasibility question.</p>
+  </header>
+
+  <section>
+    <div class="contact-grid">
+      <div class="contact-portrait">
+        <img src="Images/rand.jpg" alt="Rand - Cityside Building Design" loading="lazy" />
+        <div class="contact-direct">
+          <div class="label">Email</div>
+          <div class="muted">
+            <a href="mailto:rand@citysidebuildingdesign.ca">rand@citysidebuildingdesign.ca</a>
+          </div>
+          <div class="label">Phone</div>
+          <div class="muted">
+            <a href="tel:+17789603671">(778) 960-3671</a>
+          </div>
+          <div class="label">Service Area</div>
+          <div class="muted">North Vancouver · West Vancouver · Port Moody · Metro Vancouver</div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div class="card">
+          <h2>Send a Message</h2>
+          <p class="muted" style="margin-bottom: 1.5rem;">Fields marked with <span style="color: var(--accent);">*</span> are required.</p>
+
+          <form action="https://formsubmit.co/rand@citysidebuildingdesign.ca" method="POST" id="contactForm" aria-label="Contact form">
+            <!-- Formsubmit config -->
+            <input type="hidden" name="_subject" value="New inquiry from Cityside website" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://citysidebuildingdesign.ca/contact.html?submitted=true" />
+            <!-- Honeypot spam prevention -->
+            <input type="text" name="_honey" style="display:none" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="First Name" required placeholder="First name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="Last Name" required placeholder="Last name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="Email" required placeholder="you@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="Phone" placeholder="(604) 555-1234" />
+            </div>
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="Comments" rows="5" placeholder="Tell us about your project — address, lot size, what you're building, timeline..."></textarea>
+            </div>
+
+            <button type="submit" class="cta cta-hero" style="border: none; cursor: pointer; width: auto; margin-top: 0.5rem;">Submit</button>
+          </form>
+
+          <div id="successMessage" class="success-message" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. Rand will get back to you shortly.</p>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top: 1rem;">
+          <strong>Tip:</strong> If you already have a survey, photos, or a concept sketch, mention it in your message and Rand can follow up to receive them.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg" style="text-align:center; padding: 2rem;">
+    <p>Not sure where to start? <a href="services.html" aria-label="Browse our design services">Browse our services</a> or learn about <a href="ssmuh.html" aria-label="Learn about SSMUH housing">SSMUH housing</a>.</p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Cityside Building Design — Contact
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // Show success message if redirected back after submission
+    if (window.location.search.includes('submitted=true')) {
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('successMessage');
+      form.style.display = 'none';
+      success.style.display = 'block';
+      // Scroll to success message
+      setTimeout(() => success.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
+    }
+  </script>
+
+</body>
+</html>

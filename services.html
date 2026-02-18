@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a5276" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Services | Cityside Building Design</title>
+  <meta name="description" content="Residential and multi-unit building design services — zoning compliance, permit-ready drawings, and feasibility in Metro Vancouver." />
+  <link rel="canonical" href="https://citysidebuildingdesign.ca/services.html" />
+  <meta property="og:title" content="Services | Cityside Building Design" />
+  <meta property="og:description" content="Residential and multi-unit building design services — zoning compliance, permit-ready drawings, and feasibility." />
+  <meta property="og:image" content="https://citysidebuildingdesign.ca/Images/Info.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://citysidebuildingdesign.ca/services.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services | Cityside Building Design" />
+  <meta name="twitter:description" content="Residential and multi-unit building design services — zoning compliance, permit-ready drawings, and feasibility." />
+  <meta name="twitter:image" content="https://citysidebuildingdesign.ca/Images/Info.jpg" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <span class="nav-brand">Cityside</span>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="ssmuh.html">SSMUH / Multi-Unit Housing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero-sm">
+    <h1>Services</h1>
+    <p>Design and documentation for residential and multi-unit projects — from feasibility through permit.</p>
+  </header>
+
+  <section>
+    <div class="service-detail">
+      <div class="service-detail-content">
+        <h2>Residential Design</h2>
+        <p>
+          We provide design and documentation services for new homes, additions, and
+          renovations, with an emphasis on practical construction, zoning compliance,
+          and efficient approvals.
+        </p>
+        <ul>
+          <li>Custom single-family homes</li>
+          <li>Additions and major renovations</li>
+          <li>Infill housing</li>
+          <li>Permit-ready drawing sets</li>
+        </ul>
+      </div>
+      <div class="service-detail-accent">
+        <div class="accent-icon">🏠</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="service-detail reverse">
+      <div class="service-detail-content">
+        <h2>Multi-Unit & SSMUH Projects</h2>
+        <p>
+          Cityside Building Design specializes in small-scale multi-unit housing under
+          evolving municipal bylaws, including duplexes, triplexes, fourplexes, and
+          six-unit configurations.
+        </p>
+        <ul>
+          <li>Duplex, triplex, and fourplex design</li>
+          <li>Six-unit SSMUH feasibility and layouts</li>
+          <li>Bylaw and zoning analysis</li>
+          <li>Density, height, and site coverage coordination</li>
+        </ul>
+        <a href="ssmuh.html" class="cta-inline">Learn more about SSMUH →</a>
+      </div>
+      <div class="service-detail-accent">
+        <div class="accent-icon">🏗️</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="service-detail">
+      <div class="service-detail-content">
+        <h2>Permit & Construction Documentation</h2>
+        <p>
+          We prepare coordinated drawing packages suitable for municipal review,
+          consultant coordination, and construction pricing.
+        </p>
+        <ul>
+          <li>Development permit drawings</li>
+          <li>Building permit submissions</li>
+          <li>BC Building Code–aligned layouts</li>
+          <li>Coordination with structural and energy consultants</li>
+        </ul>
+      </div>
+      <div class="service-detail-accent">
+        <div class="accent-icon">📋</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="service-detail reverse">
+      <div class="service-detail-content">
+        <h2>Feasibility & Early Design Support</h2>
+        <p>
+          Early-stage feasibility and design input to help owners and builders
+          understand what can be built before committing to a project.
+        </p>
+        <ul>
+          <li>Pre-purchase feasibility reviews</li>
+          <li>Zoning and OCP interpretation</li>
+          <li>Yield and unit-count studies</li>
+          <li>Concept layouts and massing</li>
+        </ul>
+      </div>
+      <div class="service-detail-accent">
+        <div class="accent-icon">🔍</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-image">
+    <img src="Images/Info.jpg" alt="Cityside Building Design services overview" loading="lazy" class="lightbox-trigger" />
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="" id="lightbox-img" />
+  </div>
+
+  <section class="cta-banner">
+    <h2>Ready to Start?</h2>
+    <p>Whether you're evaluating a lot or ready for permit drawings, we can help at any stage.</p>
+    <a href="contact.html" class="cta cta-hero">Get in Touch</a>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Cityside Building Design
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function() {
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    lightbox.addEventListener('click', function() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
