@@ -120,6 +120,9 @@ header.hero {
   padding: 5rem 2rem;
   text-align: center;
   position: relative;
+  background-image: linear-gradient(rgba(14, 61, 92, 0.82), rgba(26, 82, 118, 0.82)), url('Images/hero-banner.png');
+  background-size: cover;
+  background-position: center;
 }
 
 header h1 {
@@ -909,7 +912,9 @@ footer {
 .cta-banner {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 50%, #1a6e5c 100%);
+  background: linear-gradient(rgba(14, 61, 92, 0.85), rgba(26, 82, 118, 0.80)), url('Images/cta-background.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   max-width: 100%;
 }
