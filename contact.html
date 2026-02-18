@@ -76,12 +76,7 @@
           <h2>Send a Message</h2>
           <p class="muted" style="margin-bottom: 1.5rem;">Fields marked with <span style="color: var(--accent);">*</span> are required.</p>
 
-          <form action="https://formsubmit.co/rand@citysidebuildingdesign.ca" method="POST" id="contactForm" aria-label="Contact form">
-            <!-- Formsubmit config -->
-            <input type="hidden" name="_subject" value="New inquiry from Cityside website" />
-            <input type="hidden" name="_captcha" value="true" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://citysidebuildingdesign.ca/contact.html?submitted=true" />
+          <form id="contactForm" aria-label="Contact form">
             <!-- Honeypot spam prevention -->
             <input type="text" name="_honey" style="display:none" />
 
@@ -111,7 +106,10 @@
               <textarea id="comments" name="Comments" rows="5" placeholder="Tell us about your project — address, lot size, what you're building, timeline..."></textarea>
             </div>
 
-            <button type="submit" class="cta cta-hero" style="border: none; cursor: pointer; width: auto; margin-top: 0.5rem;">Submit</button>
+            <button type="submit" id="submitBtn" class="cta cta-hero" style="border: none; cursor: pointer; width: auto; margin-top: 0.5rem;">Submit</button>
+            <div id="errorMessage" style="display:none; margin-top: 1rem; padding: 1rem; background: #fef2f2; border: 1px solid #fca5a5; border-radius: 6px; color: #991b1b;">
+              Something went wrong. Please try again or email us directly.
+            </div>
           </form>
 
           <div id="successMessage" class="success-message" style="display: none;">
@@ -148,15 +146,47 @@
       toggle.textContent = isOpen ? '✕' : '☰';
     });
 
-    // Show success message if redirected back after submission
-    if (window.location.search.includes('submitted=true')) {
-      const form = document.getElementById('contactForm');
-      const success = document.getElementById('successMessage');
-      form.style.display = 'none';
-      success.style.display = 'block';
-      // Scroll to success message
-      setTimeout(() => success.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
-    }
+    // AJAX form submission - stays on the page, no redirect
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('successMessage');
+    const errorMsg = document.getElementById('errorMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Honeypot check
+      if (form._honey && form._honey.value) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      errorMsg.style.display = 'none';
+
+      const formData = new FormData(form);
+      formData.append('_subject', 'New inquiry from Cityside website');
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
+
+      fetch('https://formsubmit.co/ajax/rand@citysidebuildingdesign.ca', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+          setTimeout(() => successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        errorMsg.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      });
+    });
   </script>
 
 </body>
