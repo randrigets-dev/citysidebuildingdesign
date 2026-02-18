@@ -134,7 +134,7 @@ header h1 {
 
 header.hero h1 {
   font-size: 3rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.12em;
 }
 
 header p {
