@@ -1448,3 +1448,18 @@ footer {
     break-inside: avoid;
   }
 }
+
+/* Services grid: centre the last row when there are 8 cards */
+@media (min-width: 769px) {
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .services-grid > .service-card {
+    grid-column: span 2;
+  }
+
+  .services-grid > .service-card:nth-child(7) {
+    grid-column: 2 / span 2;
+  }
+}
